@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
 .logo{
     height: 70px;
     width: 60px;
@@ -8,19 +10,18 @@
     display: flex;
     padding-top: 10px;
     padding-left: 15px;
+    
 }
-.container img{
+.img-logo{
     height: 40px;
     width: 30px;
     left: 163px;
     top: 27px;
     border-radius: 0px;
-    
 }
 
 .button{
     color: white;
-    border-radius: 20px;
     border: none;
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
     display: flex;
@@ -30,13 +31,28 @@
     width: 107px;
     left: 1198px;
     top: 20px;
-    font-family: Basic;
+    font-family: 'Basic';
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0px;
     text-align: left;
-    
+    text-decoration: none;
+}
+@media screen and (max-width: 990px) {
+    .logo{
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .logo{
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .logo{
+        margin-left: 30%;
+    }
 }
 
 .content{
@@ -60,7 +76,6 @@
 }
 .content-2 button{
     color: white;
-    border-radius: 20px;
     border: none;
     background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
     display: flex;
@@ -70,7 +85,7 @@
     width: 107px;
     left: 1198px;
     top: 20px;
-    font-family: Basic;
+    font-family: 'Basic';
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -102,7 +117,6 @@
 .close-about{
     position: absolute;
     left: 600px;
-
     cursor: pointer;
 }
 .popup-item {
@@ -150,17 +164,50 @@
 }
 .wrapper-Content h2 {
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 25px;
-
+    font-family: 'basic';
+    padding-bottom: 20px;
 }
+.wrapper-Content img {
+    margin-top: -80px;
+} 
 .wrapper-Content p {
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'basic';
 } 
 /*End Wrapper*/
+@media screen and (max-width: 990px) {
+    .content img{
+        display: none;
+    }
+    .content-2 h3{
+        text-align: center;
+        width: 100%;
+    }
+    .content-2 button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper-Content{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding-left: 0%;
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .content-2{
+        margin-bottom: 0;
+    }
+    .content-2 h3{
+        font-size: 50px;
+    }
+    .wrapper-Img{
+        display: none;
+    }
+}
 /* Card section*/
-.card{
+.cardd{
     text-align: center;
     margin-top: 70px;
     height: 500px;
@@ -179,7 +226,7 @@
 .card1{
     margin-right: 20px;
     width: 250px;
-    height: 370px;
+    height: 380px;
     background-color: #FDF8E3;
 }
 .card1 img {
@@ -190,27 +237,28 @@
 .card1 h2 {
     padding-bottom: 22px;
     font-size: 15px;
- 
+    font-family: 'basic';
 }
 .card1 p {
     padding-bottom: 59px;
     font-size: 12px;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'basic';
 }
 .btn-card1{
     border: none;
     font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'basic';
     padding: 13px;
     color: white;
     background: linear-gradient(#8C32F0,#E73587);
-    border-radius: 10px;
+
 }
 .card2{
     margin-right: 20px;
     width: 250px;
-    height: 370px;
+    height: 380px;
     background-color: #F0F3FA;
 }
 .card2 img {
@@ -232,16 +280,15 @@
 .btn-card2{
     border: none;
     font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'basic';
     padding: 13px;
     color: white;
     background: linear-gradient(#8C32F0,#E73587);
-    border-radius: 10px;
 }
 .card3{
     margin-right: 20px;
     width: 250px;
-    height: 370px;
+    height: 380px;
     background-color: #FEEFF0;
 }
 .card3 img {
@@ -263,11 +310,10 @@
 .btn-card3{
     border: none;
     font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'basic';
     padding: 13px;
     color: white;
     background: linear-gradient(#8C32F0,#E73587);
-    border-radius: 10px;
 }
 .btn-Panah{
     background: linear-gradient(#8C32F0,#E73587);
@@ -283,5 +329,208 @@
     height: 30px;
     width: 15px;
 }
+@media screen and (max-width: 800px) {
+    .card3{
+        display: none;
+    }
+}
+@media screen and (max-width: 580px) {
+    .cardd{
+        margin-top: 200px;
+    }
+    .card3{
+        display: none;
+    }
+    .card2{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .card-Section button{
+        margin-right: 20px;
+        margin-left: -50px;
+    }
+    .card1{
+        margin-left: -50px;
+    }
+    .card1 button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* End Card section*/
-
+/* section C */
+.section-C{
+    background-color: #020E35;
+    color: #ffff;
+    font-family: 'basic';
+}
+/* our works */
+.title-ourwork{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.title-ourwork img{
+    margin-top: -35px;
+}
+/* content brand name */
+.brand-name-1{
+    margin-top: 30px;
+    display: flex;
+}
+.brand-name-1 img{
+    width: 550px;
+}
+.text-brand-1 p{
+    width: 500px;
+}
+.text-brand-2 p{
+    width: 500px;
+}
+.brand-name-2{
+    margin-top: 60px;
+    display: flex;
+}
+.brand-name-2 img{
+    width: 550px;
+}
+.brand-name-3{
+    margin-top: 60px;
+    display: flex;
+}
+.brand-name-3 img{
+    width: 550px;
+}
+.button-ourwork{
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.button-ourwork a{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #ffff;
+    border-style: none;
+    text-decoration: none;
+    background-image: linear-gradient(to right,#8C32F0,#E73587);
+}
+/* responsive section C */
+@media screen and (max-width: 1125px) {
+    .text-brand-1 p{
+        width: 100%;
+    }
+    .text-brand-2 p{
+        width: 100%;
+    }
+    .brand-name-1 img{
+        width: 50%;
+    }
+    .brand-name-2 img{
+        width: 50%;
+    }
+    .brand-name-3 img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .text-brand{
+        display: none;
+    }
+    .web-text{
+        display: none;
+    }
+    .brand-name-1 img{
+        width: 100%;
+    }
+    .brand-name-2 img{
+        width: 100%;
+    }
+    .brand-name-3 img{
+        width: 100%;
+    }
+}
+/* section D */
+.section-D{
+    margin-top: 100px;
+    font-family: 'basic';
+}
+.section-D .container{
+    display: flex;
+}
+/* text section D */
+.text-contact h1{
+    font-size: 80px;
+    width: 550px;
+    margin-right: 20px;
+}
+.pink-color{
+    color: #E73587;
+}
+/* form section D */
+.form-label{
+    text-align: left;
+    display: block;
+}
+form input{
+    width: 520px;
+    padding: 10px;
+}
+form p{
+    border-style: solid;
+    padding: 10px;
+    border-width: 1px;
+    border-color: #00000033;
+    text-align: left;
+}
+form textarea{
+    width: 520px;
+    height: 168px;
+    padding: 10px;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    color: #ffff;
+    border-style: none;
+    background-image: linear-gradient(to left,#8C32F0,#E73587);
+}
+footer{
+    background-color: #020E35;
+    color: #ffff;
+    margin-top: 100px;
+    padding: 2px;
+    text-align: left;
+}
+/* responsive section D */
+@media screen and (max-width: 1025px) {
+    .section-D .container{
+        display: grid;
+    }
+    .text-contact{
+        text-align: center;
+        width: 100%;
+    }
+    .text-contact h1{
+        width: 100%;
+        font-size: 70px;
+    }
+    form{
+        margin-top: 50px;
+    }
+    form input{
+        width: 100%;
+    }
+    form textarea{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    .text-contact h1{
+        font-size: 50px;
+    }
+}

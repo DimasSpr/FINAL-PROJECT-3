@@ -26,3 +26,18 @@ function next(direction){
   }
   slides[index].classList.add("active");
 }
+
+// contact //
+function sendMail() {
+
+  const params = {
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  }
+  emailjs.send('service_5bqq3c8', 'template_ygdql2s', params)
+  .then(function(res){
+    alert('success', res.status, res.text);
+  },function(err){
+    alert('failed', err);
+  }) 
+}
